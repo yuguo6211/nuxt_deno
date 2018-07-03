@@ -1,0 +1,47 @@
+{
+  "name": "dpjia-monitor",
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3002"
+    }
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "start": "nuxt start",
+    "build": "nuxt build",
+    "deploy": "pm2-docker start npm -- start",
+    "generate": "nuxt generate",
+    "update": "pm2 delete `pwd` && git branch -D tmp && git fetch origin develop:tmp && git merge tmp && rm -rf node_modules && cnpm install && pm2 start npm --name `pwd` -- run dev"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bable-loader": "^0.0.1-security",
+    "bootstrap-datepicker": "^1.8.0",
+    "c3": "^0.4.23",
+    "echarts": "^4.1.0",
+    "jquery-circle-progress": "^1.2.2",
+    "js-cookie": "^2.2.0",
+    "nuxt": "^1.0.0",
+    "pug": "^2.0.3",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "coffee-loader": "^0.9.0",
+    "coffeescript": "^2.2.4",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "jquery": "^3.3.1",
+    "moment": "^2.22.1",
+    "node-sass": "^4.8.3",
+    "pug": "^2.0.0-beta6",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^7.0.1",
+    "simple-pagination.js": "^1.6.0",
+    "underscore": "^1.9.0",
+    "vue-loader": "^14.2.2"
+  }
+}

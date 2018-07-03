@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head>
+    {{ HEAD }}
+    
+    <script type="text/javascript" src="https://cdn.bootcss.com/socket.io/2.0.3/socket.io.js"></script>
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+  </body>
+  <script>
+    $('html').css({fontSize: parseInt(window.screen.width / 100) + 'px'})
+  </script>
+</html>

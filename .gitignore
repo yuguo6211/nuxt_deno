@@ -1,0 +1,11 @@
+# dependencies
+node_modules
+*.swp
+# logs
+npm-debug.log
+
+# Nuxt build
+# .nuxt
+# .nuxt/
+# Nuxt generate
+config/local_env.json

@@ -1,0 +1,56 @@
+{
+  "device": [
+    {
+      "key": "normal",
+      "value": "正常"
+    },
+    {
+      "key": "overhau",
+      "value": "检修"
+    },
+    {
+      "key": "fault",
+      "value": "故障"
+    }
+  ],
+  "rework": [
+    {
+      "key": "untreated",
+      "value": "未处理"
+    },
+    {
+      "key": "handled",
+      "value": "已处理"
+    }
+  ],
+  "order": [
+    {
+      "key": "inited",
+      "value": "初始"
+    },
+    {
+      "key": "audit_technique",
+      "value": "工艺审核"
+    },
+    {
+      "key": "audit_finance",
+      "value": "财务审核"
+    },
+    {
+      "key": "audit_manager",
+      "value": "主管审核"
+    },
+    {
+      "key": "scheduling",
+      "value": "待排产"
+    },
+    {
+      "key": "scheduled",
+      "value": "已排产"
+    },
+    {
+      "key": "sorted",
+      "value": "分拣完成"
+    }
+  ]
+}

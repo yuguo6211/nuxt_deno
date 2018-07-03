@@ -1,0 +1,66 @@
+html {
+  font-size: 13px;
+}
+.alert {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  -webkit-transform:translate(-50%, 0);
+  -moz-transform:translate(-50%, 0);
+  -o-transform:translate(-50%, 0);
+  transform:translate(-50%, 0);
+}
+.white{
+  color: #fff;
+}
+h4{
+  padding: 10px 0;
+}
+
+// 列表样式修改
+.table-striped {
+  thead{
+    tr{
+      background-color: #868e96 !important;
+      color: #fff !important;
+    }
+     // 表头字体颜色
+    th{
+      color: #fff !important;
+      vertical-align: middle !important;
+      border-bottom: none !important;
+    }
+  }
+  tbody{
+    // 去掉列表偶数行背景色
+    tr:nth-of-type(even){
+      background-color: #fff !important;
+    }
+    // 内容上下居中
+    td{
+      vertical-align: middle !important;
+    }
+  }
+}
+// 返回
+.content {
+  position: relative;
+  .goback-icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #45aaf2;
+    cursor: pointer;
+  }
+}
+
+// 按钮聚焦状态样式
+.btn:focus{
+  color: #fff !important;
+}
+
+// 翻页
+.pagination {
+  position: relative;
+  right: 20px;
+}
